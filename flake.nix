@@ -11,6 +11,12 @@
         path = ./templates/cpp;
         description = "C++ development and build project with CMake";
       };
+
+      python = {
+        path = ./templates/python;
+        description = "Python development with poetry and direnv";
+      };
+
     };
   };
 }
