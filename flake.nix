@@ -24,6 +24,11 @@
           description = "Rust development with cargo";
         };
 
+        julia-jupyter = {
+          path = ./templates/julia-jupyter;
+          description = "Jupyter notebook with julia and python";
+        };
+
       };
     };
 }
