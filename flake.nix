@@ -29,6 +29,11 @@
           description = "Jupyter notebook with julia and python";
         };
 
+        lisp = {
+          path = ./templates/lisp;
+          description = "Common Lisp development environment";
+        };
+
       };
     };
 }
