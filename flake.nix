@@ -11,17 +11,17 @@
       templates = {
         cpp = {
           path = ./templates/cpp;
-          description = "C++ development and build project with CMake";
+          description = "C++ development and build with CMake";
         };
 
         python = {
           path = ./templates/python;
-          description = "Python development with poetry and direnv";
+          description = "Python development environment with poetry";
         };
 
         rust = {
           path = ./templates/rust;
-          description = "Rust development with cargo";
+          description = "Rust development environment with cargo";
         };
 
         julia-jupyter = {

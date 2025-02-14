@@ -26,10 +26,19 @@
       with pkgs;
       {
         devShells.default = mkShell {
-          buildInputs = [
-            rust-bin.stable.latest.default
-            cargo
-          ];
+          buildInputs =
+            [
+              rust-bin.stable.latest.default
+              cargo
+            ]
+            ++ lib.optionals stdenv.isDarwin (
+              with darwin.apple_sdk.frameworks;
+              [
+                # important! add necessary darwin frameworks.
+                # https://github.com/NixOS/nixpkgs/blob/master/pkgs/os-specific/darwin/apple-sdk/frameworks.nix
+                AppKit
+              ]
+            );
         };
       }
     );
