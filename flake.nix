@@ -34,6 +34,11 @@
           description = "Common Lisp development environment";
         };
 
+        guile = {
+          path = ./templates/guile;
+          description = "Scheme development environment with Guile";
+        };
+
       };
     };
 }
