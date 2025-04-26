@@ -33,6 +33,13 @@ extend-exclude = '''
 )
 '''
 
+[tool.pyright]
+include = ["src"]
+exclude = ["**/__pycache__", "src/typestubs"]
+reportMissingImports = "error"
+reportAttributeAccessIssue = "none"
+reportMissingTypeStubs = false
+
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
