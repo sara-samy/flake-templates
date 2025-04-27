@@ -39,6 +39,11 @@
           description = "Scheme development environment with Guile";
         };
 
+        hugo = {
+          path = ./templates/hugo;
+          description = "Static website development environment with hugo";
+        };
+
       };
     };
 }
