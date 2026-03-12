@@ -34,6 +34,11 @@
           description = "Common Lisp development environment";
         };
 
+        haskell = {
+          path = ./templates/haskell;
+          description = "Haskell development environment with haskell-flake";
+        };
+
         guile = {
           path = ./templates/guile;
           description = "Scheme development environment with Guile";
