@@ -14,7 +14,7 @@ python = "^3.10"
 
 [tool.poetry.group.dev.dependencies]
 rich = "^13.7.1"
-black = "^24.8.0"
+black = "^26.3.1"
 
 [tool.poetry.group.debug.dependencies]
 pysnooper = "^1.2.0"
